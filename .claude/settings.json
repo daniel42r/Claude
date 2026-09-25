@@ -15,14 +15,6 @@
       "Bash(python3 -m t212 --json search *)",
       "Bash(python3 -m t212 pies *)",
       "Bash(python3 -m t212 --json pies *)"
-    ],
-    "ask": [
-      "Bash(python3 -m t212 buy *)",
-      "Bash(python3 -m t212 --json buy *)",
-      "Bash(python3 -m t212 sell *)",
-      "Bash(python3 -m t212 --json sell *)",
-      "Bash(python3 -m t212 cancel *)",
-      "Bash(python3 -m t212 --json cancel *)"
     ]
   }
 }
