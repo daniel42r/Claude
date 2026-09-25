@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m t212 summary)",
+      "Bash(python3 -m t212 --json summary)",
+      "Bash(python3 -m t212 positions *)",
+      "Bash(python3 -m t212 --json positions *)",
+      "Bash(python3 -m t212 analyse *)",
+      "Bash(python3 -m t212 --json analyse *)",
+      "Bash(python3 -m t212 orders *)",
+      "Bash(python3 -m t212 --json orders *)",
+      "Bash(python3 -m t212 history *)",
+      "Bash(python3 -m t212 --json history *)",
+      "Bash(python3 -m t212 search *)",
+      "Bash(python3 -m t212 --json search *)",
+      "Bash(python3 -m t212 pies *)",
+      "Bash(python3 -m t212 --json pies *)"
+    ],
+    "ask": [
+      "Bash(python3 -m t212 buy *)",
+      "Bash(python3 -m t212 --json buy *)",
+      "Bash(python3 -m t212 sell *)",
+      "Bash(python3 -m t212 --json sell *)",
+      "Bash(python3 -m t212 cancel *)",
+      "Bash(python3 -m t212 --json cancel *)"
+    ]
+  }
+}
