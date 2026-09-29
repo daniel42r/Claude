@@ -47,6 +47,10 @@ goal is to grow the demo account from £5,000 to £10,000 with an aggressive str
 - Claude's own risk rules for this mandate:
   - Hold at most 8 positions, and put no more than 30% of the account into any one.
   - Leveraged ETFs and concentrated growth stocks are allowed.
+  - Trade the news as well as the charts. Take positions on macro and geopolitical
+    catalysts (oil, gold, rates, sectors, earnings), in either direction. Leveraged
+    short/inverse ETPs are allowed. Keep capital deployed (usually no more than 15% in
+    cash), cut losers quickly, and rotate into the strongest themes.
   - Put a stop sell order on every position, typically 10–20% below the entry price
     (wider for leveraged products).
   - If the account's total value falls below £2,500, stop opening new positions and
