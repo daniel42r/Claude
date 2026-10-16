@@ -36,29 +36,12 @@ Trading (dry run unless `--confirm`):
   - Pass QTY as a positive number for both sides. The tool sends sells as negative quantities.
 - `cancel ORDER_ID [--confirm]`
 
-## Demo account: autonomous trading mandate
+## Demo account: autonomous mandate ended
 
-The user has given Claude full control of the **demo (paper money) account only**. The
-goal is to grow the demo account from £5,000 to £10,000 with an aggressive strategy.
-
-- When the order preview banner says `DEMO - paper money`, Claude may place and cancel
-  orders **without asking for approval**. Still run the dry run first and check that
-  banner before adding `--confirm`.
-- Claude's own risk rules for this mandate:
-  - Hold at most 8 positions, and put no more than 30% of the account into any one.
-  - Leveraged ETFs and concentrated growth stocks are allowed.
-  - Trade the news as well as the charts. Take positions on macro and geopolitical
-    catalysts (oil, gold, rates, sectors, earnings), in either direction. Leveraged
-    short/inverse ETPs are allowed. Keep capital deployed (usually no more than 15% in
-    cash), cut losers quickly, and rotate into the strongest themes.
-  - Put a stop sell order on every position, typically 10–20% below the entry price
-    (wider for leveraged products).
-  - If the account's total value falls below £2,500, stop opening new positions and
-    ask the user how to continue.
-  - If it reaches £10,000, stop trading and report.
-- Log every trade and every check-in in `JOURNAL.md`: date, the action, the reasoning,
-  prices with their sources, and the account value. Commit and push the journal after
-  each check-in so it survives the container being reclaimed.
+The £5,000 → £10,000 demo experiment ran from 28 Sep to 16 Oct 2026. The user ended it on
+16 Oct 2026. `JOURNAL.md` has the full log and a post-mortem. **No autonomous trading on any
+account.** Demo orders now need the user's approval too, like live orders, and the scheduled
+check-ins are disabled.
 
 ## Rules for placing orders
 
@@ -66,8 +49,7 @@ goal is to grow the demo account from £5,000 to £10,000 with an aggressive str
    explicit approval of that exact order in this conversation.** "Exact" means the
    side, ticker, quantity, order type, prices and validity. Approving one order does not
    approve the next one. Approval does not carry over from earlier sessions, and a
-   general instruction like "rebalance my portfolio" is not approval. The demo mandate
-   above never applies to the live account.
+   general instruction like "rebalance my portfolio" is not approval.
 2. On live, always run the command **without** `--confirm` first and show the user the
    preview. Only after they approve it, re-run the identical command with `--confirm` added.
 3. If the tool reports `BLOCKED`, stop and tell the user why. Never work around a guard,
